@@ -37,7 +37,7 @@ int TimedDoor::getTimeOut() const {
 }
 
 void TimedDoor::throwState() {
-    throw std::runtime_error("Door is still open after timeout!");
+    throw std::runtime_error("Error: Door is open after timeout!");
 }
 
 void Timer::sleep(int seconds) {
